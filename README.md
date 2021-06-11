@@ -1,49 +1,48 @@
 # parcel-project-template
 
-## Зависимости
+## Zalezności
 
-На компьютере должена быть установлена LTS-версия [Node.js](https://nodejs.org/en/).
+Na komputerze musi być zainstalowana LTS-wersja [Node.js](https://nodejs.org/en/).
 
-## Перед началом работы
+## Przed rozpoczęciem pracy
 
-Один раз на проект установить все зависимости.
+Jeden raz na projekt zainstalować wszystkie zalezności.
 
 ```shell
 npm ci
 ```
 
-### Разработка
+### Praca
 
-Запустить режим разработки.
+Włączyć tryp pracy.
 
 ```shell
 npm run dev
 ```
 
-Во вкладке браузера перейти по адресу [http://localhost:1234](http://localhost:1234).
+W przeglądarce przejść na [http://localhost:1234](http://localhost:1234).
 
-### Деплой
+### Deploy
 
-Сборка будет автоматически собирать и деплоить продакшен версию проекта на GitHub Pages, в ветку
-`gh-pages`, каждый раз когда обновляется ветка `main`. Например, после прямого пуша или принятого
-пул-реквеста. Для этого необходимо в файле `package.json` отредактировать поле `homepage` и скрипт
-`build`, заменив `имя_пользователя` и `имя_репозитория` на свои.
+Kod będzie automatycznie się zbierać i robić deploy aktualnej wersji projektu 
+na GitHub Pages, w gałąź `gh-pages`, za kazdym razem jeśli zostaną wprowadzone zmiany w `main`. Na przykład, po bezpośrenim push lub po przyjęciu pull-request. Aby to działało musimy w pliku `package.json` zmienić pole `homepage` i skrypt
+`build`, zmieniając `nazwe_uzytkownika` i `nazwe_repozytorium` na swoje.
 
 ```json
-"homepage": "https://имя_пользователя.github.io/имя_репозитория",
+"homepage": "https://nazwa_uzytkownika.github.io/nazwa_repozytorium",
 "scripts": {
-  "build": "parcel build src/*.html --public-url /имя_репозитория/"
+  "build": "parcel build src/*.html --public-url /nazwa_repozytorium/"
 },
 ```
 
-Через какое-то время живую страницу можно будет посмотреть по адресу указанному в отредактированном
-свойстве `homepage`, например
+Po jakimś czasie stronę mozna będzie zobaczyć na zywo pod adresem który 
+jest wpisany w poprawione właściwości `homepage`, na przykład
 [https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
 
-## Файлы и папки
+## Pliki i folderzy
 
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
+- Wszystkie partials plików styłów powinny być w folderze `src/sass` i importować się w
   `src/sass/main.scss`
-- Изображения добавляйте в папку `src/images`, заранее оптимизировав их. Сборщик просто копирует
-  используемые изображения чтобы не нагружать систему оптимизацией картинок, так как на слабых
-  компьютерах это может занять прилично времени.
+- Zdjęcia dodawajcie w folder `src/images`, przed tym zoptymizujcie te zdjęcia które dodajecie. Program po prostu 
+  kopiuje wykorzystane zdjęcia aby system nie musiał optymizować je, bo na słabych komputerach 
+  to moze zająć duzo czasu.
