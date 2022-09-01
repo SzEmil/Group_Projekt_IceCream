@@ -1,0 +1,14 @@
+body {
+  margin: auto;
+  font-family: 'DM Sans', 'Titan One', sans-serif;
+  @media screen and (max-width: 768px) {
+    body {
+      min-width: 320px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    body {
+      width: 100%;
+    }
+  }
+}
