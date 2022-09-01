@@ -50,6 +50,12 @@ body {
   color: black;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .gallery__background {
   background-color: papayawhip;
 }/*# sourceMappingURL=main.css.map */
