@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/sass/components/_setup.scss"],"names":[],"mappings":"AAAA","file":"main.min.04a838cc.css","sourceRoot":"../src","sourcesContent":["*,\n*::after,\n*::before {\n  margin: 0;\n  padding: 0;\n  text-decoration: none;\n  list-style: none;\n  box-sizing: border-box;\n}\n"]}
