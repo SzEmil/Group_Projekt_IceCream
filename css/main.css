@@ -11,13 +11,12 @@
   text-decoration: none;
   list-style: none;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   margin: auto;
-  font-family: 'DM Sans', 'Titan One', sans-serif;
-  background-color: black;
+  font-family: "DM Sans", "Titan One", sans-serif;
 }
 @media screen and (max-width: 768px) {
   body body {
@@ -46,4 +45,11 @@ body {
     padding: 0 116px;
     width: 1280px;
   }
-} /*# sourceMappingURL=main.css.map */
+}
+.section {
+  color: black;
+}
+
+.gallery__background {
+  background-color: papayawhip;
+}/*# sourceMappingURL=main.css.map */
