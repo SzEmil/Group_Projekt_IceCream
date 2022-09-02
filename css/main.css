@@ -11,12 +11,12 @@
   text-decoration: none;
   list-style: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   margin: auto;
-  font-family: "DM Sans", "Titan One", sans-serif;
+  font-family: 'DM Sans', 'Titan One', sans-serif;
 }
 @media screen and (max-width: 768px) {
   body body {
@@ -51,11 +51,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 6px;
 }
 
@@ -66,18 +66,19 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: transparent;
   border: none;
   outline: none;
   color: #d41443;
   cursor: pointer;
 }
-.menu-toggle:hover, .menu-toggle:focus {
+.menu-toggle:hover,
+.menu-toggle:focus {
   color: #ffffff;
 }
 
@@ -92,7 +93,7 @@ body {
   background-color: #e17992;
   z-index: 999;
   -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -120,7 +121,7 @@ body {
 
 .menu-container.is-open {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 .menu-container .menu-toggle {
@@ -170,7 +171,7 @@ body {
   background-color: #ffb8ca;
 }
 .hero__title {
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
@@ -232,7 +233,6 @@ body {
   display: flex;
 }
 
-
 .gallery__background {
   background-color: papayawhip;
 }
@@ -245,11 +245,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .advantages__item {
   max-width: 230px;
@@ -260,29 +260,29 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 38px;
 }
 .advantages__item-icon-first::before {
-  content: "";
+  content: '';
   display: block;
   width: 33px;
   height: 50px;
   background-image: url(/images/advantages/icon1.png);
 }
 .advantages__item-icon-second::before {
-  content: "";
+  content: '';
   display: block;
   width: 50px;
   height: 50px;
   background-image: url(/images/advantages/icon2.png);
 }
 .advantages__item-icon-third::before {
-  content: "";
+  content: '';
   display: block;
   width: 44px;
   height: 50px;
@@ -307,10 +307,10 @@ body {
   .advantages__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     gap: 60px;
     margin-left: 36px;
   }
@@ -336,13 +336,19 @@ body {
     font-size: 58px;
   }
 
-
-.gallery {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(39.5%, #fff5f6), color-stop(39.5%, #ffffff), to(#ffffff));
-  background-image: linear-gradient(to bottom, #fff5f6 39.5%, #ffffff 39.5%, #ffffff 100%);
-  background-size: cover;
+  .gallery {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(39.5%, #fff5f6),
+      color-stop(39.5%, #ffffff),
+      to(#ffffff)
+    );
+    background-image: linear-gradient(to bottom, #fff5f6 39.5%, #ffffff 39.5%, #ffffff 100%);
+    background-size: cover;
+  }
+  .gallery__pic {
+    width: 100%;
+  }
 }
-.gallery__pic {
-  width: 100%;
-
-}/*# sourceMappingURL=main.css.map */
