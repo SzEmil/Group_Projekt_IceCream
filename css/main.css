@@ -60,6 +60,6 @@ body {
   display: flex;
 }
 
-.gallery__background {
-  background-color: papayawhip;
+.gallery__pic {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
