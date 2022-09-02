@@ -1,25 +1,30 @@
-<header>tutaj jest header</header>
+<header class="wrapper"></header>
 
 <section class="hero">
-  <div class="container">
-    <div>
-      <h1>
-        <span>ice cream made with</span>
-        <span>passion</span>
-      </h1>
-      <button type="button">Products</button>
-      <button type="button">How it's made?</button>
-    </div>
-    <div>
-      <!-- <picture>
-        <source srcset="images/product-designer.jpg" media="(min-width: 1200px)" />
-        <source srcset="images/product-designer@2x.jpg 2x" media="(min-width: 1200px)" />
-        <source srcset="images/product-designer-tablet.jpg" media="(min-width: 768px)" />
-        <source srcset="images/product-designer-tablet@2x.jpg 2x" media="(min-width: 768px)" />
-        <source srcset="images/product-designer-mobile.jpg" media="(max-width: 767px)" />
-        <source srcset="images/product-designer-mobile@2x.jpg 2x" media="(max-width: 767px)" />
-        <img class="" src="images/hero-header/ice-mobile.png" alt="Product designer" />
-      </picture> -->
+  <div class="container relative">
+    <ul>
+      <li>
+        <h1 class="hero__title">
+          ice cream <br />
+          made with
+          <span class="hero__title--accent">passion</span>
+        </h1>
+      </li>
+      <li class="hero__list-item">
+        <button class="hero__btn hero__btn--dark" type="button">Products</button>
+        <button class="hero__btn hero__btn--light" type="button">How it's made?</button>
+      </li>
+    </ul>
+    <div class="hero__ellipse">
+      <picture>
+        <source srcset="images/hero-header/ice-desktop.png" media="(min-width: 1280px)" />
+        <source srcset="images/hero-header/ice-desktop@2x.png 2x" media="(min-width: 1280px)" />
+        <source srcset="images/hero-header/ice-tablet.png" media="(min-width: 768px)" />
+        <source srcset="images/hero-header/ice-tablet@2x.png 2x" media="(min-width: 768px)" />
+        <source srcset="images/hero-header/ice-mobile.png" media="(max-width: 767px)" />
+        <source srcset="images/hero-header/ice-mobile@2x.png 2x" media="(max-width: 767px)" />
+        <img class="hero__ice" src="images/hero-header/ice-desktop.png" alt="ice scream" />
+      </picture>
     </div>
   </div>
 </section>
