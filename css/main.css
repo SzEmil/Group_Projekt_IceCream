@@ -46,6 +46,10 @@ body {
     width: 1280px;
   }
 }
+.hero {
+  background-color: #ffb8ca;
+}
+
 .section {
   color: black;
 }
