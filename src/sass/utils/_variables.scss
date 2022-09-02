@@ -13,3 +13,4 @@ $gallery-background: (
 @function get-gallery-background($key) {
   @return map-get($gallery-background, $key);
 } ;
+$testpatryk: white;
