@@ -1,3 +1,12 @@
 .gallery__pic {
   width: 100%;
 }
+.gallery__background {
+  background-image: linear-gradient(
+    to bottom,
+    get-gallery-background(dark-bg-color) 39.5%,
+    get-gallery-background(light-bg-color) 39.5%,
+    get-gallery-background(light-bg-color) 100%
+  );
+  background-size: cover;
+}
