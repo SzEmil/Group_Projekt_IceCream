@@ -232,6 +232,11 @@ body {
   display: flex;
 }
 
-.gallery__background {
-  background-color: papayawhip;
+.gallery {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(39.5%, #fff5f6), color-stop(39.5%, #ffffff), to(#ffffff));
+  background-image: linear-gradient(to bottom, #fff5f6 39.5%, #ffffff 39.5%, #ffffff 100%);
+  background-size: cover;
+}
+.gallery__pic {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

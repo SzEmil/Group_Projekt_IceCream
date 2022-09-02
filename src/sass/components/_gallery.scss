@@ -1,3 +1,12 @@
-.gallery__background {
-  background-color: papayawhip;
+.gallery {
+  background-image: linear-gradient(
+    to bottom,
+    get-gallery-background(dark-bg-color) 39.5%,
+    get-gallery-background(light-bg-color) 39.5%,
+    get-gallery-background(light-bg-color) 100%
+  );
+  background-size: cover;
+  &__pic {
+    width: 100%;
+  }
 }
