@@ -46,6 +46,96 @@ body {
     width: 1280px;
   }
 }
+.mobile-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 6px;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #d41443;
+  cursor: pointer;
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  color: #ffffff;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 60px;
+  background-color: #e17992;
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+.menu-container__btn {
+  width: calc(100% - 20px - 20px);
+  color: #d41443;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  padding: 12px 0;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 22px;
+  display: block;
+  margin: auto;
+}
+.menu-container__btn-icon {
+  margin-left: 27px;
+  color: #d41443;
+  fill: #d41443;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #ffffff;
+}
+
+.menu-container .menu-toggle:hover,
+.menu-container .menu-toggle:focus,
+.menu-container .menu-toggle:active {
+  color: #d41443;
+}
+
 .wrapper {
   background-color: #ffb8ca;
 }
