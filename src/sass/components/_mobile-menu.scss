@@ -74,3 +74,25 @@
 .menu-container .menu-toggle:active {
   color: $primary-color;
 }
+
+.mobile-menu {
+  margin-top: 19px;
+
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    color: $heroLightColor;
+    display: block;
+    padding: 13px 0 13px 21px;
+    border-top: $heroMobileMenuBorder;
+
+    &--active {
+      color: $primary-color;
+    }
+
+    &--last {
+      border-bottom: $heroMobileMenuBorder;
+    }
+  }
+}

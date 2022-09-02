@@ -136,6 +136,25 @@ body {
   color: #d41443;
 }
 
+.mobile-menu {
+  margin-top: 19px;
+}
+.mobile-menu__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #ffffff;
+  display: block;
+  padding: 13px 0 13px 21px;
+  border-top: solid 1px #e18298;
+}
+.mobile-menu__link--active {
+  color: #d41443;
+}
+.mobile-menu__link--last {
+  border-bottom: solid 1px #e18298;
+}
+
 .wrapper {
   background-color: #ffb8ca;
 }
