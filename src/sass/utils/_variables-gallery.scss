@@ -1,0 +1,7 @@
+$gallery-background: (
+  'light-bg-color': #ffffff,
+  'dark-bg-color': #fff5f6,
+);
+@function get-gallery-background($key) {
+  @return map-get($gallery-background, $key);
+}

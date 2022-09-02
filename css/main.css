@@ -232,11 +232,26 @@ body {
   display: flex;
 }
 
-
-.gallery__background {
-  background-color: papayawhip;
+.gallery {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(26.5%, #fff5f6), color-stop(26.5%, #ffffff), to(#ffffff));
+  background-image: linear-gradient(to bottom, #fff5f6 26.5%, #ffffff 26.5%, #ffffff 100%);
+  background-size: cover;
+  padding-bottom: 80px;
+}
+.gallery__pic {
+  width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-bottom: 121px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-bottom: 123px;
+  }
+}
 .advantages {
   background-color: #fff5f6;
 }
@@ -335,14 +350,4 @@ body {
   .advantages__title {
     font-size: 58px;
   }
-
-
-.gallery {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(39.5%, #fff5f6), color-stop(39.5%, #ffffff), to(#ffffff));
-  background-image: linear-gradient(to bottom, #fff5f6 39.5%, #ffffff 39.5%, #ffffff 100%);
-  background-size: cover;
-}
-.gallery__pic {
-  width: 100%;
-
 }/*# sourceMappingURL=main.css.map */
