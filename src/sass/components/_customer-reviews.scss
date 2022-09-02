@@ -1,0 +1,21 @@
+@import '@splidejs/splide/src/css/core';
+
+.splide__list {
+  //list-style: none;
+  //margin: 0;
+  //padding: 0;
+}
+
+.splide__slide {
+  position: relative;
+}
+
+.splide__container {
+  margin-top: 123px;
+}
+
+.customer__picture {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
