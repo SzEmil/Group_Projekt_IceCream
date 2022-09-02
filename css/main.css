@@ -115,7 +115,7 @@ body {
 .menu-container__btn-icon {
   margin-left: 27px;
   color: #d41443;
-  fill: #d41443;
+  fill: transparent;
 }
 
 .menu-container.is-open {
