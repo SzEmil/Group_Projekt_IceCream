@@ -62,4 +62,10 @@ body {
 
 .gallery__pic {
   width: 100%;
+}
+
+.gallery__background {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(39.5%, #fff5f6), color-stop(39.5%, #ffffff), to(#ffffff));
+  background-image: linear-gradient(to bottom, #fff5f6 39.5%, #ffffff 39.5%, #ffffff 100%);
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
