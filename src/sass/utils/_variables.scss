@@ -12,7 +12,7 @@ $gallery-background: (
 );
 @function get-gallery-background($key) {
   @return map-get($gallery-background, $key);
-
+}
 $testOla: tomato;
 
 $testpatryk: white;
