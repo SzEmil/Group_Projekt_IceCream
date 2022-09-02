@@ -1,0 +1,98 @@
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: $primary-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $heroLightColor;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 60px;
+  background-color: $heroMobileMenuBcgColor;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &__btn {
+    width: calc(100% - 20px - 20px);
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    text-align: center;
+    padding: 12px 0;
+    background-color: $heroLightColor;
+    border: none;
+    border-radius: 22px;
+    display: block;
+    margin: auto;
+
+    &-icon {
+      margin-left: 27px;
+      color: $primary-color;
+      fill: $primary-color;
+    }
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: $heroLightColor;
+}
+
+.menu-container .menu-toggle:hover,
+.menu-container .menu-toggle:focus,
+.menu-container .menu-toggle:active {
+  color: $primary-color;
+}
+
+.mobile-menu {
+  margin-top: 19px;
+
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    color: $heroLightColor;
+    display: block;
+    padding: 13px 0 13px 21px;
+    border-top: $heroMobileMenuBorder;
+
+    &--active {
+      color: $primary-color;
+    }
+
+    &--last {
+      border-bottom: $heroMobileMenuBorder;
+    }
+  }
+}
