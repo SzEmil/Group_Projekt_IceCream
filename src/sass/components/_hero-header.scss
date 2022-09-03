@@ -55,15 +55,24 @@
     border-radius: 20px;
     padding: 7px 14px;
     display: block;
+    transition: background-color $heroAnimationTiming;
 
     &--dark {
       color: $heroLightColor;
       background-color: $primary-color;
+
+      &:hover {
+        background-color: #c7133e;
+      }
     }
 
     &--light {
       color: $primary-color;
       background-color: $heroLightColor;
+
+      &:hover {
+        background-color: #ecebeb;
+      }
     }
   }
 
@@ -96,15 +105,10 @@
 
 // --- TABLET ---
 @media screen and (min-width: 768px) {
-  .mobile-header {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
+  .header {
     padding-top: 37px;
     z-index: 10;
-  }
 
-  .header {
     &__tablet-menu {
       display: flex;
       gap: 30px;
@@ -123,6 +127,13 @@
       border: none;
       border-radius: 22px;
       display: block;
+      cursor: pointer;
+      transition: background-color $heroAnimationTiming;
+
+      &:hover,
+      &:focus {
+        background-color: $heroBtnLightHover;
+      }
 
       &-icon {
         margin-left: 12px;
@@ -185,8 +196,7 @@
         border-radius: 50%;
         border-style: none;
         background-color: $white-color;
-
-        // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color $heroAnimationTiming;
 
         &:focus,
         &:hover {
@@ -203,8 +213,7 @@
         &-icon {
           stroke-width: 0;
           fill: $primary-color;
-
-          // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          transition: fill $heroAnimationTiming;
         }
       }
     }
@@ -277,5 +286,12 @@
         color: $heroLightColor;
       }
     }
+  }
+}
+
+// --- DESKTOP ---
+@media screen and (min-width: 1280px) {
+  .menu-toggle {
+    display: none;
   }
 }

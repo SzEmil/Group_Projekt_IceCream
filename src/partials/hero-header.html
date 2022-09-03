@@ -1,5 +1,5 @@
 <header class="wrapper">
-  <div class="container mobile-header">
+  <div class="container header">
     <a class="header__logo" href="index.html">
       <picture>
         <source srcset="images/hero-header/logo-desktop.png" media="(min-width: 1280px)" />
@@ -13,13 +13,7 @@
     </a>
     <div class="header__tablet-menu">
       <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg
-          width="20"
-          height="14"
-          viewBox="0 0 20 14"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 1H20" stroke="#D41443" />
           <path d="M0 7H20" stroke="#D41443" />
           <path d="M0 13H20" stroke="#D41443" />
@@ -46,8 +40,8 @@
         </h1>
       </li>
       <li class="hero__list-item">
-        <button class="hero__btn hero__btn--dark" type="button">Products</button>
-        <button class="hero__btn hero__btn--light" type="button">How it's made?</button>
+        <a class="hero__btn hero__btn--dark" href="#products">Products</a>
+        <a class="hero__btn hero__btn--light" href="#">How it's made?</a>
       </li>
       <li class="hero__list-item--tablet">
         <picture>
@@ -127,10 +121,10 @@
     </svg>
   </button>
   <ul class="mobile-menu">
-    <li><a href="index.html" class="mobile-menu__link mobile-menu__link--active">Home</a></li>
+    <li><a href="index.html" class="mobile-menu__link">Home</a></li>
     <li><a href="#" class="mobile-menu__link">About us</a></li>
     <li><a href="#" class="mobile-menu__link">How it's made?</a></li>
-    <li><a href="#" class="mobile-menu__link">Our products</a></li>
+    <li><a href="#products" class="mobile-menu__link">Our products</a></li>
     <li><a href="#" class="mobile-menu__link mobile-menu__link--last">Contact</a></li>
   </ul>
 </div>
