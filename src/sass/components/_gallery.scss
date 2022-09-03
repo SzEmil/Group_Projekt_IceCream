@@ -1,25 +1,44 @@
 .gallery {
   background-image: linear-gradient(
     to bottom,
-    get-gallery-background(dark-bg-color) 26.5%,
-    get-gallery-background(light-bg-color) 26.5%,
+    get-gallery-background(dark-bg-color) 25%,
+    get-gallery-background(light-bg-color) 25%,
     get-gallery-background(light-bg-color) 100%
   );
   background-size: cover;
   padding-bottom: 80px;
   &__pic {
     width: 100%;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .gallery {
     padding-bottom: 121px;
+    background-image: linear-gradient(
+      to bottom,
+      get-gallery-background(dark-bg-color) 27%,
+      get-gallery-background(light-bg-color) 27%,
+      get-gallery-background(light-bg-color) 100%
+    );
+    &__pic {
+      max-width: 767px;
+    }
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .gallery {
     padding-bottom: 123px;
+    background-image: linear-gradient(
+      to bottom,
+      get-gallery-background(dark-bg-color) 30%,
+      get-gallery-background(light-bg-color) 30%,
+      get-gallery-background(light-bg-color) 100%
+    );
+    &__pic {
+      max-width: 1279px;
+    }
   }
 }
