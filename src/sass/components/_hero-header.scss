@@ -1,3 +1,71 @@
+.wrapper {
+  background-color: $secondary-color;
+}
+
+.relative {
+  position: relative;
+  padding-bottom: 160px;
+  overflow: hidden;
+  z-index: 1;
+}
+
 .hero {
   background-color: $secondary-color;
+
+  &__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $heroLightColor;
+    padding-bottom: 19px;
+    padding-top: 137px;
+
+    &--accent {
+      font-size: 48px;
+      color: $primary-color;
+      line-height: 0.95;
+      display: block;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__btn {
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 14px;
+    display: block;
+
+    &--dark {
+      color: $heroLightColor;
+      background-color: $primary-color;
+    }
+
+    &--light {
+      color: $primary-color;
+      background-color: $heroLightColor;
+    }
+  }
+
+  &__ellipse {
+    position: absolute;
+    background-color: $heroEllipseColor;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    padding-top: 9px;
+    padding-left: 81px;
+    top: 27px;
+    right: -62px;
+    z-index: -1;
+  }
 }

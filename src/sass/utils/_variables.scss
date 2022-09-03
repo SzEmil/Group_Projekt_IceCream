@@ -3,3 +3,14 @@ $secondary-color: #ffb8ca;
 $main-font: 'DM Sans';
 $title-font: 'Titan One';
 $test: black;
+
+// --- GALLERY ---
+
+$gallery-background: (
+  'light-bg-color': #ffffff,
+  'dark-bg-color': #fff5f6,
+);
+@function get-gallery-background($key) {
+  @return map-get($gallery-background, $key);
+}
+
