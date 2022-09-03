@@ -1,17 +1,16 @@
 import './sass/main.scss';
 
-// Dodany i uruchomiony skrypt do Splide (karuzela)
+// Added and initialized splidejs script - mounted in page.
 import Splide from '@splidejs/splide';
 
-new Splide('.splide', {
+const splide = new Splide('.splide', {
   arrows: false,
-  rewind: true,
-  type: 'slide',
+  type: 'loop',
+  autoplay: 'pause',
   speed: 500,
-  autoplay: true,
-  interval: 500,
+  interval: 5000,
   pauseOnHover: true,
-  perPage: 1,
-  preloadPages: 1,
 }).mount();
+
+splide.Components.Autoplay.play();
 
