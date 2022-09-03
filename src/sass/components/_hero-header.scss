@@ -16,6 +16,10 @@
   }
 }
 
+.main-navigation {
+  display: none;
+}
+
 .hero {
   background-color: $secondary-color;
 
@@ -55,16 +59,30 @@
     border-radius: 20px;
     padding: 7px 14px;
     display: block;
+    transition: background-color $heroAnimationTiming;
 
     &--dark {
       color: $heroLightColor;
       background-color: $primary-color;
+
+      &:hover {
+        background-color: #c7133e;
+      }
     }
 
     &--light {
       color: $primary-color;
       background-color: $heroLightColor;
+
+      &:hover {
+        background-color: #ecebeb;
+      }
     }
+  }
+
+  &__ellipse picture {
+    display: block;
+    font-size: 0;
   }
 
   &__ellipse {
@@ -96,15 +114,10 @@
 
 // --- TABLET ---
 @media screen and (min-width: 768px) {
-  .mobile-header {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
+  .header {
     padding-top: 37px;
     z-index: 10;
-  }
 
-  .header {
     &__tablet-menu {
       display: flex;
       gap: 30px;
@@ -123,6 +136,13 @@
       border: none;
       border-radius: 22px;
       display: block;
+      cursor: pointer;
+      transition: background-color $heroAnimationTiming;
+
+      &:hover,
+      &:focus {
+        background-color: $heroBtnLightHover;
+      }
 
       &-icon {
         margin-left: 12px;
@@ -164,19 +184,21 @@
       height: 126px;
       display: block;
 
+      &-neighbour {
+        margin-left: -4px;
+        margin-bottom: 6px;
+      }
+
       &-text {
         display: block;
         max-width: 114px;
         font-size: 8px;
         line-height: 1.5;
         color: $heroLightColor;
-        margin-left: -4px;
         padding-bottom: 7px;
       }
 
       &-btn {
-        margin-left: -4px;
-        margin-bottom: 6px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -185,8 +207,7 @@
         border-radius: 50%;
         border-style: none;
         background-color: $white-color;
-
-        // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color $heroAnimationTiming;
 
         &:focus,
         &:hover {
@@ -203,8 +224,7 @@
         &-icon {
           stroke-width: 0;
           fill: $primary-color;
-
-          // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          transition: fill $heroAnimationTiming;
         }
       }
     }
@@ -223,13 +243,21 @@
       height: 336px;
     }
 
+    &__woman picture {
+      display: block;
+      font-size: 0;
+    }
+
     &__woman {
       display: block;
-      width: 168px;
-      height: 133px;
       position: absolute;
       bottom: 0;
       right: 34px;
+
+      &-photo {
+        width: 168px;
+        height: 133px;
+      }
     }
 
     &__list-number {
@@ -275,6 +303,160 @@
         line-height: 1.25;
         text-align: right;
         color: $heroLightColor;
+      }
+    }
+  }
+}
+
+// --- DESKTOP ---
+@media screen and (min-width: 1280px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .relative {
+    padding-bottom: 45px;
+  }
+
+  .header {
+    &__tablet-menu {
+      gap: 0;
+    }
+
+    &__logo {
+      margin-left: -70px;
+    }
+  }
+
+  .main-navigation {
+    display: flex;
+    align-items: center;
+    margin-right: 110px;
+
+    &__link {
+      display: block;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.3125;
+      color: $heroLightColor;
+      transition: color $heroAnimationTiming;
+      padding-right: 35px;
+
+      &--last {
+        padding-right: 0;
+      }
+
+      &:hover,
+      &:focus {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .hero {
+    &__title {
+      padding-bottom: 25px;
+      padding-top: 84px;
+      font-size: 38px;
+      line-height: 1.15;
+
+      &--accent {
+        font-size: 58px;
+        line-height: 0.89;
+      }
+    }
+
+    &__list-item {
+      gap: 15px;
+
+      &--tablet {
+        padding-top: 56px;
+        margin-left: -39px;
+      }
+    }
+
+    &__btn {
+      font-size: 14px;
+      line-height: 1.28;
+      padding: 11px 22px;
+    }
+
+    &__milk {
+      width: 188px;
+      height: 191px;
+
+      &-neighbour {
+        margin-left: 30px;
+        margin-bottom: 11px;
+      }
+
+      &-text {
+        padding-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.42;
+        max-width: 200px;
+      }
+
+      &-btn {
+        width: 26px;
+        height: 26px;
+
+        &-icon {
+          width: 9px;
+          height: 9px;
+        }
+      }
+    }
+
+    &__ellipse {
+      width: 538px;
+      height: 538px;
+      padding-top: 56px;
+      padding-left: 119px;
+      top: -34px;
+      right: 267px;
+    }
+
+    &__ice {
+      width: 236px;
+      height: 557px;
+    }
+
+    &__woman {
+      right: 109px;
+
+      &-photo {
+        width: 293px;
+        height: 232px;
+      }
+    }
+
+    &__list-number {
+      padding-right: 0px;
+
+      &::after {
+        width: 30px;
+        height: 30px;
+        top: -4px;
+        left: 62px;
+      }
+
+      &-title {
+        font-size: 46px;
+        line-height: 1.15;
+
+        &--first {
+          margin-top: 84px;
+        }
+
+        &--last {
+          margin-top: 14px;
+        }
+      }
+
+      &-dsc {
+        font-size: 14px;
+        line-height: 1.28;
       }
     }
   }
