@@ -1,3 +1,4 @@
+// --- MOBILE ---
 .wrapper {
   background-color: $secondary-color;
 }
@@ -7,6 +8,12 @@
   padding-bottom: 160px;
   overflow: hidden;
   z-index: 1;
+}
+
+.header {
+  &__btn {
+    display: none;
+  }
 }
 
 .hero {
@@ -34,6 +41,10 @@
   &__list-item {
     display: flex;
     gap: 8px;
+
+    &--tablet {
+      display: none;
+    }
   }
 
   &__btn {
@@ -67,5 +78,204 @@
     top: 27px;
     right: -62px;
     z-index: -1;
+  }
+
+  &__ice {
+    width: 171px;
+    height: 410px;
+  }
+
+  &__woman {
+    display: none;
+  }
+
+  &__list-number {
+    display: none;
+  }
+}
+
+// --- TABLET ---
+@media screen and (min-width: 768px) {
+  .mobile-header {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    padding-top: 37px;
+    z-index: 10;
+  }
+
+  .header {
+    &__tablet-menu {
+      display: flex;
+      gap: 30px;
+      z-index: 20;
+    }
+
+    &__btn {
+      width: 160px;
+      color: $primary-color;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.31;
+      text-align: center;
+      padding: 12px 0;
+      background-color: $heroLightColor;
+      border: none;
+      border-radius: 22px;
+      display: block;
+
+      &-icon {
+        margin-left: 12px;
+        color: $primary-color;
+        fill: transparent;
+      }
+    }
+  }
+
+  .relative {
+    padding-bottom: 28px;
+    overflow: visible;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero {
+    &__title {
+      padding-bottom: 20px;
+      padding-top: 15px;
+      font-size: 22px;
+      line-height: 1.13;
+
+      &--accent {
+        font-size: 34px;
+        line-height: 0.91;
+      }
+    }
+
+    &__list-item--tablet {
+      display: flex;
+      gap: 0;
+      padding-top: 19px;
+      align-items: flex-end;
+    }
+
+    &__milk {
+      width: 124px;
+      height: 126px;
+      display: block;
+
+      &-text {
+        display: block;
+        max-width: 114px;
+        font-size: 8px;
+        line-height: 1.5;
+        color: $heroLightColor;
+        margin-left: -4px;
+        padding-bottom: 7px;
+      }
+
+      &-btn {
+        margin-left: -4px;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border-style: none;
+        background-color: $white-color;
+
+        // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus,
+        &:hover {
+          background-color: $primary-color;
+          cursor: pointer;
+        }
+
+        &:focus .hero__milk-btn-icon,
+        &:hover .hero__milk-btn-icon {
+          fill: $white-color;
+          cursor: pointer;
+        }
+
+        &-icon {
+          stroke-width: 0;
+          fill: $primary-color;
+
+          // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+      }
+    }
+
+    &__ellipse {
+      width: 324px;
+      height: 322px;
+      padding-top: 32px;
+      padding-left: 71px;
+      top: -56px;
+      right: 17.8%;
+    }
+
+    &__ice {
+      width: 143px;
+      height: 336px;
+    }
+
+    &__woman {
+      display: block;
+      width: 168px;
+      height: 133px;
+      position: absolute;
+      bottom: 0;
+      right: 34px;
+    }
+
+    &__list-number {
+      display: block;
+      padding-right: 10px;
+      position: relative;
+
+      &::after {
+        content: ' ';
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: $heroLightColor;
+        border-radius: 50%;
+        position: absolute;
+        top: -2px;
+        left: 35px;
+        z-index: -1;
+      }
+
+      &-title {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 1.14;
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $primary-color;
+
+        &--first {
+          margin-top: 9px;
+        }
+
+        &--last {
+          margin-top: 14px;
+        }
+      }
+
+      &-dsc {
+        font-size: 8px;
+        line-height: 1.25;
+        text-align: right;
+        color: $heroLightColor;
+      }
+    }
   }
 }
