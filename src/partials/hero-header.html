@@ -1,5 +1,5 @@
 <header class="wrapper">
-  <div class="container mobile-header">
+  <div class="container header">
     <a class="header__logo" href="index.html">
       <picture>
         <source srcset="images/hero-header/logo-desktop.png" media="(min-width: 1280px)" />
@@ -8,23 +8,37 @@
         <source srcset="images/hero-header/logo-tablet@2x.png 2x" media="(min-width: 768px)" />
         <source srcset="images/hero-header/logo-mobile.png" media="(max-width: 767px)" />
         <source srcset="images/hero-header/logo-mobile@2x.png 2x" media="(max-width: 767px)" />
-        <img class="hero__ice" src="images/hero-header/logo-desktop.png" alt="ice scream" />
+        <img src="images/hero-header/logo-desktop.png" alt="ice scream" />
       </picture>
     </a>
-    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg
-        width="24"
-        height="24"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-          clip-rule="evenodd"
-        ></path>
-      </svg>
-    </button>
+    <div class="header__tablet-menu">
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1H20" stroke="#D41443" />
+          <path d="M0 7H20" stroke="#D41443" />
+          <path d="M0 13H20" stroke="#D41443" />
+        </svg>
+      </button>
+
+      <nav class="main-navigation">
+        <a href="#" class="main-navigation__link">Home</a>
+
+        <a href="#" class="main-navigation__link">About us</a>
+
+        <a href="#" class="main-navigation__link">How it's made?</a>
+
+        <a href="#products" class="main-navigation__link">Our products</a>
+
+        <a href="#" class="main-navigation__link main-navigation__link--last">Contact</a>
+      </nav>
+
+      <button class="header__btn" type="button">
+        Buy now
+        <svg class="header__btn-icon" width="5.26" height="8">
+          <use href="./images/icons.svg#buy-now-icon"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -39,8 +53,28 @@
         </h1>
       </li>
       <li class="hero__list-item">
-        <button class="hero__btn hero__btn--dark" type="button">Products</button>
-        <button class="hero__btn hero__btn--light" type="button">How it's made?</button>
+        <a class="hero__btn hero__btn--dark" href="#products">Products</a>
+        <a class="hero__btn hero__btn--light" href="#">How it's made?</a>
+      </li>
+      <li class="hero__list-item--tablet">
+        <picture>
+          <source srcset="images/hero-header/milk-desktop.png" media="(min-width: 1280px)" />
+          <source srcset="images/hero-header/milk-desktop@2x.png 2x" media="(min-width: 1280px)" />
+          <source srcset="images/hero-header/milk-tablet.png" media="(min-width: 768px)" />
+          <source srcset="images/hero-header/milk-tablet@2x.png 2x" media="(min-width: 768px)" />
+          <img class="hero__milk" src="images/hero-header/milk-desktop.png" alt="milk" />
+        </picture>
+        <div class="hero__milk-neighbour">
+          <p class="hero__milk-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button class="hero__milk-btn" type="button">
+            <svg class="hero__milk-btn-icon" width="6" height="6">
+              <use href="images/icons.svg#icon-arrow-right2"></use>
+            </svg>
+          </button>
+        </div>
       </li>
     </ul>
     <div class="hero__ellipse">
@@ -54,23 +88,43 @@
         <img class="hero__ice" src="images/hero-header/ice-desktop.png" alt="ice scream" />
       </picture>
     </div>
+    <div class="hero__woman">
+      <picture>
+        <source srcset="images/hero-header/woman-desktop.png" media="(min-width: 1280px)" />
+        <source srcset="images/hero-header/woman-desktop@2x.png 2x" media="(min-width: 1280px)" />
+        <source srcset="images/hero-header/woman-tablet.png" media="(min-width: 768px)" />
+        <source srcset="images/hero-header/woman-tablet@2x.png 2x" media="(min-width: 768px)" />
+        <img
+          class="hero__woman-photo"
+          src="images/hero-header/woman-desktop.png"
+          alt="woman with ice cream"
+        />
+      </picture>
+    </div>
+    <ul>
+      <li class="hero__list-number">
+        <p class="hero__list-number-title hero__list-number-title--first">16</p>
+        <p class="hero__list-number-dsc">cafes</p>
+      </li>
+      <li class="hero__list-number">
+        <p class="hero__list-number-title hero__list-number-title--last">23</p>
+        <p class="hero__list-number-dsc">food trucks</p>
+      </li>
+    </ul>
   </div>
 </section>
 
 <div class="menu-container js-menu-container" id="mobile-menu">
   <button class="menu-toggle js-close-menu">
     <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
       fill="currentColor"
-      viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
     >
-      <path
-        fill-rule="evenodd"
-        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-        clip-rule="evenodd"
-      ></path>
+      <path d="M1.25928 1L14.7408 15" stroke="white" />
+      <path d="M1 14.7407L15 1.25924" stroke="white" />
     </svg>
   </button>
   <button class="menu-container__btn" type="button">
@@ -80,10 +134,10 @@
     </svg>
   </button>
   <ul class="mobile-menu">
-    <li><a href="index.html" class="mobile-menu__link mobile-menu__link--active">Home</a></li>
+    <li><a href="index.html" class="mobile-menu__link">Home</a></li>
     <li><a href="#" class="mobile-menu__link">About us</a></li>
     <li><a href="#" class="mobile-menu__link">How it's made?</a></li>
-    <li><a href="#" class="mobile-menu__link">Our products</a></li>
+    <li><a href="#products" class="mobile-menu__link">Our products</a></li>
     <li><a href="#" class="mobile-menu__link mobile-menu__link--last">Contact</a></li>
   </ul>
 </div>
