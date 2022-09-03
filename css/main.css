@@ -190,6 +190,11 @@ body {
     padding-left: 24px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .menu-container {
+    display: none;
+  }
+}
 .wrapper {
   background-color: #ffb8ca;
 }
@@ -202,6 +207,10 @@ body {
 }
 
 .header__btn {
+  display: none;
+}
+
+.main-navigation {
   display: none;
 }
 
@@ -258,6 +267,10 @@ body {
 }
 .hero__btn--light:hover {
   background-color: #ecebeb;
+}
+.hero__ellipse picture {
+  display: block;
+  font-size: 0;
 }
 .hero__ellipse {
   position: absolute;
@@ -353,18 +366,19 @@ body {
     height: 126px;
     display: block;
   }
+  .hero__milk-neighbour {
+    margin-left: -4px;
+    margin-bottom: 6px;
+  }
   .hero__milk-text {
     display: block;
     max-width: 114px;
     font-size: 8px;
     line-height: 1.5;
     color: #ffffff;
-    margin-left: -4px;
     padding-bottom: 7px;
   }
   .hero__milk-btn {
-    margin-left: -4px;
-    margin-bottom: 6px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -408,13 +422,19 @@ body {
     width: 143px;
     height: 336px;
   }
+  .hero__woman picture {
+    display: block;
+    font-size: 0;
+  }
   .hero__woman {
     display: block;
-    width: 168px;
-    height: 133px;
     position: absolute;
     bottom: 0;
     right: 34px;
+  }
+  .hero__woman-photo {
+    width: 168px;
+    height: 133px;
   }
   .hero__list-number {
     display: block;
@@ -460,6 +480,126 @@ body {
 @media screen and (min-width: 1280px) {
   .menu-toggle {
     display: none;
+  }
+  .relative {
+    padding-bottom: 45px;
+  }
+  .header__tablet-menu {
+    gap: 0;
+  }
+  .header__logo {
+    margin-left: -70px;
+  }
+  .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 110px;
+  }
+  .main-navigation__link {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3125;
+    color: #ffffff;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-right: 35px;
+  }
+  .main-navigation__link--last {
+    padding-right: 0;
+  }
+  .main-navigation__link:hover, .main-navigation__link:focus {
+    color: #d41443;
+  }
+  .hero__title {
+    padding-bottom: 25px;
+    padding-top: 84px;
+    font-size: 38px;
+    line-height: 1.15;
+  }
+  .hero__title--accent {
+    font-size: 58px;
+    line-height: 0.89;
+  }
+  .hero__list-item {
+    gap: 15px;
+  }
+  .hero__list-item--tablet {
+    padding-top: 56px;
+    margin-left: -39px;
+  }
+  .hero__btn {
+    font-size: 14px;
+    line-height: 1.28;
+    padding: 11px 22px;
+  }
+  .hero__milk {
+    width: 188px;
+    height: 191px;
+  }
+  .hero__milk-neighbour {
+    margin-left: 30px;
+    margin-bottom: 11px;
+  }
+  .hero__milk-text {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.42;
+    max-width: 200px;
+  }
+  .hero__milk-btn {
+    width: 26px;
+    height: 26px;
+  }
+  .hero__milk-btn-icon {
+    width: 9px;
+    height: 9px;
+  }
+  .hero__ellipse {
+    width: 538px;
+    height: 538px;
+    padding-top: 56px;
+    padding-left: 119px;
+    top: -34px;
+    right: 267px;
+  }
+  .hero__ice {
+    width: 236px;
+    height: 557px;
+  }
+  .hero__woman {
+    right: 109px;
+  }
+  .hero__woman-photo {
+    width: 293px;
+    height: 232px;
+  }
+  .hero__list-number {
+    padding-right: 0px;
+  }
+  .hero__list-number::after {
+    width: 30px;
+    height: 30px;
+    top: -4px;
+    left: 62px;
+  }
+  .hero__list-number-title {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  .hero__list-number-title--first {
+    margin-top: 84px;
+  }
+  .hero__list-number-title--last {
+    margin-top: 14px;
+  }
+  .hero__list-number-dsc {
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
 .products {
