@@ -9,7 +9,7 @@
   padding-bottom: 80px;
   &__pic {
     width: 100%;
-    // max-width: 767px;
+    max-width: 767px;
   }
 }
 
@@ -23,6 +23,7 @@
       get-gallery-background(light-bg-color) 100%
     );
     &__pic {
+      min-width: 767px;
       max-width: 1279px;
     }
   }
@@ -37,5 +38,8 @@
       get-gallery-background(light-bg-color) 30%,
       get-gallery-background(light-bg-color) 100%
     );
+    &__pic {
+      min-width: 1279px;
+    }
   }
 }
