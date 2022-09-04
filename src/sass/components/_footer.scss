@@ -36,11 +36,11 @@
     height: 32px;
     border-radius: 50px;
     background-color: #fea5bb;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus,
     &:hover {
       background: #d41443;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
