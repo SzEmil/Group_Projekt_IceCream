@@ -1381,11 +1381,18 @@ body {
             flex-direction: row;
     gap: 60px;
     padding-bottom: 140px;
-    padding-left: 36px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .advantages__item {
-    max-width: 180px;
-    width: 100%;
+    -ms-flex-preferred-size: 1280px;
+        flex-basis: 1280px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   .advantages__title {
     font-size: 48px;
