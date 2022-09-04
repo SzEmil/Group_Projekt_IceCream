@@ -1,0 +1,147 @@
+// --- MOBILE ---
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.menu-toggle {
+  min-height: 20px;
+  min-width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: $primary-color;
+  cursor: pointer;
+  transition: color $heroAnimationTiming;
+
+  &:hover,
+  &:focus {
+    color: $heroLightColor;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 60px;
+  background-color: $heroMobileMenuBcgColor;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &__btn {
+    width: calc(100% - 20px - 20px);
+    max-width: 300px;
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    text-align: center;
+    padding: 12px 0;
+    background-color: $heroLightColor;
+    border: none;
+    border-radius: 22px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: background-color $heroAnimationTiming;
+
+    &:hover,
+    &:focus {
+      background-color: $heroBtnLightHover;
+    }
+
+    &-icon {
+      margin-left: 27px;
+      color: $primary-color;
+      fill: transparent;
+    }
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  color: $heroLightColor;
+  transition: color $heroAnimationTiming;
+}
+
+.menu-container .menu-toggle:hover,
+.menu-container .menu-toggle:focus,
+.menu-container .menu-toggle:active {
+  color: $primary-color;
+}
+
+.mobile-menu {
+  margin-top: 19px;
+
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    color: $heroLightColor;
+    display: block;
+    padding: 13px 0 13px 21px;
+    border-top: $heroMobileMenuBorder;
+    transition: color $heroAnimationTiming;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+    }
+
+    &--last {
+      border-bottom: $heroMobileMenuBorder;
+    }
+  }
+}
+
+// --- TABLET ---
+@media screen and (min-width: 768px) {
+  .menu-container {
+    width: 254px;
+    right: 204px;
+    left: auto;
+    padding-top: 87px;
+    transform: translateX(500%);
+
+    &__btn {
+      width: 186px;
+
+      &-icon {
+        margin-left: 14.5px;
+      }
+    }
+  }
+
+  .menu-container .menu-toggle {
+    top: 53px;
+  }
+
+  .mobile-menu {
+    &__link {
+      padding-left: 24px;
+    }
+  }
+}
+
+// --- DESKTOP ---
+@media screen and (min-width: 1280px) {
+  .menu-container {
+    display: none;
+  }
+}

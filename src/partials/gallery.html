@@ -1,21 +1,32 @@
-<div>
-  <picture>
-    <source
-      srcset="./images/gallery/gallery_mobile.jpg 1x, ./images/gallery/gallery_mobile@2x.jpg 2x"
-      media="(max-width: 767px)"
-    />
-    <source
-      srcset="./images/gallery/gallery_tablet.jpg 1x, ./images/gallery/gallery_tablet@2x.jpg 2x"
-      media="(max-width: 1199px)"
-    />
-    <source
-      srcset="./images/gallery/gallery_desktop.jpg 1x, ./images/gallery/gallery_desktop@2x.jpg 2x"
-      media="(min-width: 1200px)"
-    />
-    <img
-      class="gallery__pic"
-      src="./images/gallery/gallery_mobile.jpg"
-      alt="Various pictures of ice cream"
-    />
-  </picture>
-</div>
+<section class="gallery" id="gallery">
+  <div class="container">
+    <picture>
+      <source
+        srcset="
+          ./images/gallery/gallery_mobile_MOD.png    1x,
+          ./images/gallery/gallery_mobile@2x_MOD.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="
+          ./images/gallery/gallery_tablet_MOD.png    1x,
+          ./images/gallery/gallery_tablet@2x_MOD.png 2x
+        "
+        media="(max-width: 1199px)"
+      />
+      <source
+        srcset="
+          ./images/gallery/gallery_desktop_MOD.png    1x,
+          ./images/gallery/gallery_desktop@2x_MOD.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <img
+        class="gallery__pic"
+        src="./images/gallery/gallery_mobile_MOD.png"
+        alt="Various pictures of ice cream"
+      />
+    </picture>
+  </div>
+</section>
