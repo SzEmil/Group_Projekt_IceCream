@@ -21,6 +21,7 @@
     flex-direction: column;
     gap: 25px;
     border-radius: 24px;
+    box-shadow: 0px 8px 30px $contacts__shadow;
   }
 
   &__category {
@@ -91,6 +92,11 @@
     font-size: 21px;
     height: 44px;
     width: 190px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__icon {
@@ -132,6 +138,10 @@
   color: $contacts__red;
   border: none;
   border-radius: 22px;
+
+  &:hover {
+    background-color: $contacts__hover;
+  }
 }
 
 /* kotwica do menu */
@@ -144,7 +154,6 @@
 
 @media screen and (min-width: 768px) {
   .contacts {
-    padding-top: 113px;
     background: linear-gradient(0deg, rgba(255, 245, 246, 1) 79%, rgba(255, 255, 255, 1) 79%);
   }
 
@@ -213,7 +222,7 @@
     line-height: 21px;
   }
 
-  .contacts__btn-icon {
+  .contacts__icon {
     margin-left: 13px;
   }
 }
@@ -222,7 +231,6 @@
 
 @media screen and (min-width: 1280px) {
   .contacts {
-    padding-top: 132px;
     background: linear-gradient
       (to bottom, (0deg, rgba(255, 245, 246, 1) 74%, rgba(255, 255, 255, 1) 74%));
   }
@@ -283,9 +291,5 @@
   .contacts__buttons {
     gap: 15px;
     padding-bottom: 165px;
-  }
-
-  .contacts__btn-icon {
-    margin-left: 14px;
   }
 }

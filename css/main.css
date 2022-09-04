@@ -98,6 +98,8 @@ body {
           flex-direction: column;
   gap: 25px;
   border-radius: 24px;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
 .contacts__category {
   text-transform: uppercase;
@@ -174,6 +176,18 @@ body {
   font-size: 21px;
   height: 44px;
   width: 190px;
+  cursor: pointer;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contacts__icon {
   margin-left: 8px;
@@ -217,6 +231,9 @@ body {
   border: none;
   border-radius: 22px;
 }
+.franchise--button:hover {
+  background-color: #ECEBEB;
+}
 
 /* kotwica do menu */
 #contacts-anchor {
@@ -226,7 +243,6 @@ body {
 /* tablet */
 @media screen and (min-width: 768px) {
   .contacts {
-    padding-top: 113px;
     background: -webkit-gradient(linear, left bottom, left top, color-stop(79%, rgb(255, 245, 246)), color-stop(79%, rgb(255, 255, 255)));
     background: linear-gradient(0deg, rgb(255, 245, 246) 79%, rgb(255, 255, 255) 79%);
   }
@@ -290,14 +306,13 @@ body {
     font-size: 16px;
     line-height: 21px;
   }
-  .contacts__btn-icon {
+  .contacts__icon {
     margin-left: 13px;
   }
 }
 /* desktop */
 @media screen and (min-width: 1280px) {
   .contacts {
-    padding-top: 132px;
     background: linear-gradient to bottom, 0deg, rgb(255, 245, 246) 74%, rgb(255, 255, 255) 74%;
   }
   .contacts__dots {
@@ -346,8 +361,5 @@ body {
   .contacts__buttons {
     gap: 15px;
     padding-bottom: 165px;
-  }
-  .contacts__btn-icon {
-    margin-left: 14px;
   }
 }/*# sourceMappingURL=main.css.map */
