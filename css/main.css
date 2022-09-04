@@ -647,7 +647,10 @@ body {
   color: #d41443;
   padding-bottom: 26px;
 }
-.about__list {
+.about__img {
+  padding-bottom: 46px;
+}
+.about__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -655,15 +658,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.about__img {
-  padding-bottom: 46px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 767px;
 }
 .about__desc1 {
   font-family: "DM Sans";
@@ -682,9 +684,6 @@ body {
   color: #907E82;
   max-width: 220px;
   padding-bottom: 17px;
-}
-.about__item:last-child {
-  padding-bottom: 39px;
 }
 .about__button {
   display: -webkit-box;
@@ -712,9 +711,8 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .about__button:focus, .about__button:hover {
-  background-color: #d41443;
+  background-color: #ECEBEB;
   cursor: pointer;
-  color: #fff;
 }
 .about__button-icon {
   margin-left: 14px;
@@ -733,6 +731,39 @@ body {
     line-height: 55px;
     padding-bottom: 50px;
   }
+  .about__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 17px;
+       -moz-column-gap: 17px;
+            column-gap: 17px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    width: 100%;
+    max-width: 1279px;
+  }
+  .about__wrapper-text {
+    width: 50%;
+    max-width: 1279px;
+  }
+  .about__wrapper-img {
+    width: 50%;
+    max-width: 1279px;
+  }
+  .about__desc1 {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .about__desc2 {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .about__img {
+    width: 340px;
+    height: 339px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .about__sub-title {
@@ -743,6 +774,14 @@ body {
     font-size: 58px;
     line-height: 66px;
     padding-bottom: 55px;
+  }
+  .about__desc1 {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .about__desc2 {
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 .gallery {

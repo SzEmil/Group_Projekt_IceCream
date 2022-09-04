@@ -1,15 +1,6 @@
 .about {
     background-color: $bg-color;
 
-    // &__bg {
-    //     position: absolute;
-    //     left: 150px;
-    //     top: 3417px;
-    //     margin: 0 auto;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
-
     &__sub-title {
         font-family: $title-font;
         font-weight: 400;
@@ -34,15 +25,18 @@
         padding-bottom: 26px;
     }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     &__img {
         padding-bottom: 46px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 767px;
+        // padding-bottom: 39px;
     }
 
     &__desc1 {
@@ -63,12 +57,6 @@
         color: $font-color-grey;
         max-width: 220px;
         padding-bottom: 17px;
-    }
-
-    &__item {
-        &:last-child {
-            padding-bottom: 39px;
-        }
     }
 
     &__button {
@@ -92,9 +80,8 @@
 
         &:focus,
         &:hover {
-            background-color: $primary-color;
+            background-color: $button-bg-hover;
             cursor: pointer;
-            color: $font-color-white;
         }
 
         &-icon {
@@ -119,6 +106,39 @@
             line-height: 55px;
             padding-bottom: 50px;
         }
+
+        &__wrapper {
+            flex-direction: row;
+            column-gap: 17px;
+            flex-basis: calc(100% / 2);
+            width: 100%;
+            max-width: 1279px;
+        }
+
+        &__wrapper-text {
+            width: 50%;
+            max-width: 1279px;
+        }
+
+        &__wrapper-img {
+            width: 50%;
+            max-width: 1279px;
+        }
+
+        &__desc1 {
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        &__desc2 {
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        &__img {
+            width: 340px;
+            height: 339px;
+        }
     }
 }
 
@@ -133,6 +153,16 @@
             font-size: 58px;
             line-height: 66px;
             padding-bottom: 55px;
+        }
+
+        &__desc1 {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        &__desc2 {
+            font-size: 16px;
+            line-height: 28px;
         }
     }
 }
