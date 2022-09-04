@@ -6,9 +6,16 @@
 // Style dla pliku z przykładem HTML fragmentu
 @import 'components/setup';
 @import 'utils/variables';
+@import 'utils/variables-products';
+@import 'utils/variables-hero';
+@import 'utils/variables-gallery';
 @import 'components/body';
 @import 'components/container';
+@import 'components/mobile-menu';
 @import 'components/hero-header';
+@import 'components/products';
 @import 'components/about-us';
 @import 'components/gallery';
+@import 'components/customer-reviews';
+@import 'components/advantages';
 @import 'components/contacts';
