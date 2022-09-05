@@ -114,9 +114,9 @@
 @media screen and (min-width: 768px) {
   .menu-container {
     width: 254px;
-    right: 204px;
+    right: 0px;
     left: auto;
-    padding-top: 87px;
+    padding-top: 60px;
     transform: translateX(500%);
 
     &__btn {
@@ -129,7 +129,7 @@
   }
 
   .menu-container .menu-toggle {
-    top: 53px;
+    top: 23px;
   }
 
   .mobile-menu {
