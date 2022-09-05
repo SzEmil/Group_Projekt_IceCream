@@ -805,11 +805,16 @@ body {
 
 .about {
   background-color: #FFF5F6;
-  background-image: url(/images/about-us/about-us-bg-mobile.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
+}
+.about__milk {
   width: 100%;
-  width: auto;
+  max-width: 767px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin-top: 766px;
+  z-index: 0;
 }
 .about__sub-title {
   font-family: "Titan One";
@@ -918,8 +923,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .about {
-    background-image: none;
+  .about__milk {
+    display: none;
   }
   .about__sub-title {
     font-size: 26px;
@@ -982,11 +987,26 @@ body {
   }
 }
 @media screen and (min-width: 1280px) {
-  .about {
-    background-image: url(/images/about-us/about-us-bg-desktop.png);
+  .about__milk {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    justify-items: center;
+    width: 100%;
+    min-width: 1280px;
+    display: block;
     background-repeat: no-repeat;
-    background-position: bottom;
-    width: auto;
+    background-size: cover;
+    position: absolute;
+    margin-top: 253px;
+    z-index: 0;
   }
   .about__sub-title {
     font-size: 30px;
@@ -1029,6 +1049,7 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    z-index: 1;
   }
   .about__wrapper-img {
     min-width: 463px;
