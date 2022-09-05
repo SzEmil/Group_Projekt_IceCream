@@ -1,5 +1,10 @@
 .about {
     background-color: $bg-color;
+    background-image: url(/images/about-us/about-us-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    width: auto;
 
     &__sub-title {
         font-family: $title-font;
@@ -13,6 +18,7 @@
         padding-top: 125px;
     }
 
+    
     &__title {
         font-family: $title-font;
         font-weight: 400;
@@ -36,6 +42,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        padding-bottom: 39px;
 
         &-img {
             padding: 0 20px;
@@ -107,6 +114,8 @@
 
 @media screen and (min-width: 768px) {
     .about {
+        background-image: none;
+
         &__sub-title {
             font-size: 26px;
             line-height: 30px;
@@ -172,6 +181,11 @@
 
 @media screen and (min-width: 1280px) {
     .about {
+        background-image: url(/images/about-us/about-us-bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        width: auto;
+
         &__sub-title {
             font-size: 30px;
             line-height: 34px;
