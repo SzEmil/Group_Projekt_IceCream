@@ -9,7 +9,8 @@
   padding-bottom: 80px;
   &__pic {
     width: 100%;
-    max-width: 767px;
+    max-width: 700px;
+    display: block;
   }
 }
 
@@ -23,8 +24,8 @@
       get-gallery-background(light-bg-color) 100%
     );
     &__pic {
-      min-width: 767px;
-      max-width: 1279px;
+      min-width: 700px;
+      max-width: 1211px;
     }
   }
 }
@@ -39,7 +40,9 @@
       get-gallery-background(light-bg-color) 100%
     );
     &__pic {
-      min-width: 1279px;
+      min-width: 1048px;
+      display: flex;
+      justify-content: flex-start;
     }
   }
 }

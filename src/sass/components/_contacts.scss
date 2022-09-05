@@ -1,0 +1,297 @@
+/* mobile */
+
+.contacts {
+  background: linear-gradient(0deg, rgba(255, 245, 246, 1) 94%, rgba(255, 255, 255, 1) 94%);
+  position: relative;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 54px;
+    flex-basis: calc((100% - 40px) / 3);
+    padding: 0 30px;
+  }
+
+  &__item {
+    background-color: $contacts__white;
+    padding: 43px 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px $contacts__shadow;
+  }
+
+  &__category {
+    text-transform: uppercase;
+    color: $contacts__white;
+    background-color: $contacts__category;
+    border-radius: 4px;
+    width: 80px;
+    text-align: center;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__description {
+    padding-bottom: 25px;
+  }
+
+  &__city {
+    color: $contacts__black;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 22.34px;
+    margin-bottom: 10px;
+  }
+
+  &__about {
+    color: $contacts__about;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  &__days-open {
+    color: $contacts__black;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22.34px;
+  }
+
+  &__hours-open {
+    color: $contacts__pink;
+    font-size: 12px;
+    line-height: 22.34px;
+    text-transform: uppercase;
+  }
+
+  &__media {
+    color: $contacts__about;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    z-index: 1;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 113px;
+  }
+
+  &__btn {
+    font-weight: 700;
+    font-size: 21px;
+    height: 44px;
+    width: 190px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-left: 8px;
+    width: 8px;
+    height: 16px;
+  }
+
+  &__dots {
+    display: none;
+  }
+}
+
+/* domieszki */
+
+.header--foodtruck {
+  background-color: $contacts__foodtruck;
+  width: 130px;
+}
+
+.description--border {
+  border-bottom: 1px solid $contacts__border;
+}
+
+.description--media {
+  display: flex;
+  flex-direction: column;
+}
+
+.location--button {
+  background-color: $contacts__red;
+  color: $contacts__white;
+  border: none;
+  border-radius: 22px;
+}
+
+.franchise--button {
+  background-color: $contacts__white;
+  color: $contacts__red;
+  border: none;
+  border-radius: 22px;
+
+  &:hover {
+    background-color: $contacts__hover;
+  }
+}
+
+/* kotwica do menu */
+
+#contacts-anchor {
+  display: none;
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    background: linear-gradient(0deg, rgba(255, 245, 246, 1) 79%, rgba(255, 255, 255, 1) 79%);
+  }
+
+  .contacts__list {
+    flex-direction: row;
+    padding: 0 16px;
+    flex-wrap: nowrap;
+    margin-bottom: 81px;
+  }
+
+  .contacts__item {
+    padding: 50px 32px;
+    gap: 20px;
+  }
+
+  .contacts__category {
+    font-size: 16px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    width: 73px;
+    height: 28px;
+  }
+
+  .header--foodtruck {
+    width: 138px;
+  }
+
+  .contacts__description {
+    padding-bottom: 30px;
+  }
+
+  .contacts__city {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 14px;
+  }
+
+  .contacts__about {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .contacts__days-open {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .contacts__hours-open {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .contacts__media {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .contacts__buttons {
+    flex-direction: row;
+    gap: 14.5px;
+    padding-bottom: 158px;
+  }
+
+  .contacts__btn {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .contacts__icon {
+    margin-left: 13px;
+  }
+}
+
+/* desktop */
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    background: linear-gradient
+      (to bottom, (0deg, rgba(255, 245, 246, 1) 74%, rgba(255, 255, 255, 1) 74%));
+  }
+
+  .contacts__dots {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-top: 150px;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .contacts__list {
+    margin-bottom: 86px;
+  }
+
+  .contacts__item {
+    padding: 51px 44px 62px 43px;
+    gap: 31px;
+  }
+
+  .contacts__category {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+
+  .contacts__description {
+    padding-bottom: 32px;
+  }
+
+  .contacts__city {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .contacts__about {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .contacts__days-open {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .contacts__hours-open {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .contacts__media {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .contacts__buttons {
+    gap: 15px;
+    padding-bottom: 165px;
+  }
+}
