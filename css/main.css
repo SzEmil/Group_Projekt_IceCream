@@ -665,7 +665,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 767px;
 }
 .about__desc1 {
   font-family: "DM Sans";
@@ -674,7 +673,7 @@ body {
   line-height: 19px;
   color: #000;
   padding-bottom: 47px;
-  max-width: 220px;
+  min-width: 220px;
 }
 .about__desc2 {
   font-family: "DM Sans";
@@ -682,7 +681,7 @@ body {
   font-size: 12px;
   line-height: 19px;
   color: #907E82;
-  max-width: 220px;
+  min-width: 220px;
   padding-bottom: 17px;
 }
 .about__button {
@@ -739,22 +738,29 @@ body {
     -webkit-column-gap: 17px;
        -moz-column-gap: 17px;
             column-gap: 17px;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     max-width: 1279px;
+    padding-bottom: 66px;
   }
   .about__wrapper-text {
-    width: 50%;
-    max-width: 1279px;
+    min-width: 340px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .about__wrapper-img {
-    width: 50%;
-    max-width: 1279px;
+    min-width: 340px;
   }
   .about__desc1 {
     font-size: 14px;
     line-height: 25px;
+    padding-bottom: 29px;
   }
   .about__desc2 {
     font-size: 14px;
@@ -764,11 +770,18 @@ body {
     width: 340px;
     height: 339px;
   }
+  .about__button {
+    margin: 0;
+    margin-top: 62px;
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .about__sub-title {
     font-size: 30px;
     line-height: 34px;
+    padding-bottom: 15px;
   }
   .about__title {
     font-size: 58px;
@@ -778,10 +791,43 @@ body {
   .about__desc1 {
     font-size: 16px;
     line-height: 28px;
+    padding-bottom: 35px;
   }
   .about__desc2 {
     font-size: 16px;
     line-height: 28px;
+  }
+  .about__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 17px;
+       -moz-column-gap: 17px;
+            column-gap: 17px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    max-width: 1280px;
+  }
+  .about__wrapper-text {
+    min-width: 463px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .about__wrapper-img {
+    min-width: 463px;
+  }
+  .about__button {
+    margin: 0;
+    margin-top: 45px;
+    font-size: 16px;
+    line-height: 21px;
   }
 }
 .gallery {
