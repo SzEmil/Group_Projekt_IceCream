@@ -27,6 +27,7 @@
 
     &__img {
         padding-bottom: 46px;
+        width: 100%;
     }
 
     &__wrapper {
@@ -35,8 +36,19 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        // max-width: 767px;
-        // padding-bottom: 39px;
+
+        &-img {
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        &-pic {
+            width: 100%;
+        }
+
+        &-text {
+            padding: 0 50px;
+        }
     }
 
     &__desc1 {
@@ -112,22 +124,24 @@
             column-gap: 17px;
             justify-content: center;
             align-items: center;
-            // flex-basis: calc(100% / 2);
             width: 100%;
-            max-width: 1279px;
+            // max-width: 1279px;
             padding-bottom: 66px;
+            // flex-basis: calc(100% / 2 - 17px);
         }
 
         &__wrapper-text {
-            // width: 50%;
-            min-width: 340px;
             justify-content: flex-start;
-            // align-items: flex-start;
+            padding: 0;
         }
 
         &__wrapper-img {
-            // width: 50%;
-            min-width: 340px;
+            width: 100%;
+            padding: 0;
+        }
+
+        &__wrapper-pic {
+            width: 100%;
         }
 
         &__desc1 {
@@ -139,12 +153,12 @@
         &__desc2 {
             font-size: 14px;
             line-height: 25px;
+            padding: 0;
 
         }
 
         &__img {
-            width: 340px;
-            height: 339px;
+            min-width: 340px;
         }
 
         &__button {
@@ -174,27 +188,27 @@
             font-size: 16px;
             line-height: 28px;
             padding-bottom: 35px;
+            // max-width: 463px;
         }
 
         &__desc2 {
             font-size: 16px;
             line-height: 28px;
-            // padding-bottom: 45px;
+            // max-width: 463px;
         }
 
         &__wrapper {
             flex-direction: row;
-            column-gap: 17px;
+            column-gap: 74px;
             justify-content: center;
             align-items: center;
-            // flex-basis: calc(100% / 2);
             width: 100%;
             max-width: 1280px;
         }
 
         &__wrapper-text {
             // width: 50%;
-            min-width: 463px;
+            max-width: 463px;
             justify-content: flex-start;
             // align-items: flex-start;
         }
@@ -209,6 +223,10 @@
             margin-top: 45px;
             font-size: 16px;
             line-height: 21px;
+        }
+
+        &__img {
+            max-width: 516px;
         }
     }
 }
