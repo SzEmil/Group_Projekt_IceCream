@@ -37,15 +37,33 @@
                     tincidunt.
 
                     Aliquam erat volutpat. Aenean accumsan.</p>
-                <button class="about__button"><span class="about__button-text">Read More</span>
+                <button class="about__button" type="button" aboutus-modal-open1><span class="about__button-text">Read
+                        More</span>
                     <svg class="about__button-icon" width="6.5" height="9.5">
                         <use href="./images/icons.svg#buy-now-icon"></use>
                     </svg>
                 </button>
             </div>
-
         </div>
-
     </div>
-
+    <div class="modal is-hidden" aboutus-modal1>
+        <div class="modal__block modal__block--first">
+            <button type="button" class="modal__close-btn" aboutus-modal-close1>
+                <svg class="modal__close-icon" width="15" height="16">
+                    <use href="images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="modal__description">Preparation</p>
+            <span class="modal__span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quos alias ad
+                error repudiandae asperiores, facere quam debitis praesentium fugiat ipsam repellat recusandae.
+                Repudiandae dignissimos odio veritatis ipsum similique tempore?</span>
+            <p class="modal__description">Production</p>
+            <span class="modal__span">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor recusandae vero
+                consequatur ipsum accusamus.</span>
+            <p class="modal__description">Ending</p>
+            <span class="modal__span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vero rem quia error
+                perspiciatis repellat nihil, id quo blanditiis. Dolorum, ipsa reprehenderit!</span>
+        </div>
+    </div>
 </section>
+<script src="./js/about-us-modal.js"></script>
