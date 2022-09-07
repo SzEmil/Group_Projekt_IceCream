@@ -32,7 +32,7 @@
         <a href="#footer" class="main-navigation__link main-navigation__link--last">Contact</a>
       </nav>
 
-      <button class="header__btn" type="button">
+      <button class="header__btn" type="button" data-modal-open>
         Buy now
         <svg class="header__btn-icon" width="5.26" height="8">
           <use href="./images/icons.svg#buy-now-icon"></use>
@@ -140,6 +140,62 @@
     <li><a href="#products" class="mobile-menu__link">Our products</a></li>
     <li><a href="#footer" class="mobile-menu__link mobile-menu__link--last">Contact</a></li>
   </ul>
+</div>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-modal-close>x</button>
+    <h3 class="modal__form-title">Zostaw swoje dane w formularzu poniżej</h3>
+    <form class="modal__form" name="contact-form" autocomplete="on">
+      <label class="modal__form-box">
+        <!-- <svg width="18" height="18" class="modal__form-icon">
+          <use href="images/sprite-min.svg#icon-person-black"></use>
+        </svg> -->
+        <span class="modal__form-box-info">Imię</span>
+        <input class="modal__form-input" type="text" name="client_name" required />
+      </label>
+
+      <label class="modal__form-box">
+        <!-- <svg width="18" height="18" class="modal__form-icon">
+          <use href="images/sprite-min.svg#icon-phone-black"></use>
+        </svg> -->
+        <span class="modal__form-box-info">Telefon</span>
+        <input class="modal__form-input" type="tel" name="client_phone_number" />
+      </label>
+      <label class="modal__form-box">
+        <!-- <svg width="18" height="18" class="modal__form-icon">
+          <use href="images/sprite-min.svg#icon-email-black"></use>
+        </svg> -->
+        <span class="modal__form-box-info">Email</span>
+        <input class="modal__form-input" type="email" name="client_email" required />
+      </label>
+      <label>
+        <span class="modal__form-box-info">Komentarz</span>
+        <textarea
+          class="modal__form-txt-area"
+          name="client_comment"
+          placeholder="Wprowadź komentarz"
+        ></textarea>
+      </label>
+
+      <div class="checkbox">
+        <input
+          type="checkbox"
+          name="statute_acceptation"
+          id="statute_checkbox"
+          required
+          class="checkbox__input"
+        />
+        <label class="checkbox__label" for="statute_checkbox">
+          <span class="checkbox__info"
+            >Oświadczam iż akceptuję <a href="#" class="checkbox__link">Regulamin</a> i
+            <a href="#" class="checkbox__link">Politykę Prywatności</a>.</span
+          >
+        </label>
+      </div>
+      <button class="checkbox__btn" type="submit">Wyślij</button>
+    </form>
+  </div>
 </div>
 
 <script
