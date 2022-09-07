@@ -668,10 +668,8 @@ body {
   border: none;
   border-radius: 50%;
   color: #d41443;
-  width: 30px;
-  height: 30px;
+  text-align: center;
   display: block;
-  margin-left: auto;
   cursor: pointer;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1200,6 +1198,8 @@ body {
 }
 .modal__close-btn:hover .modal__close-icon, .modal__close-btn:focus .modal__close-icon {
   fill: white;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__close-icon {
   fill: #d41443;
@@ -1227,6 +1227,7 @@ body {
   background-image: url(/images/about-us/about-us-bg-mobile.png);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: bottom;
   width: 100%;
   width: auto;
 }
@@ -1339,6 +1340,7 @@ body {
 @media screen and (min-width: 768px) {
   .about {
     background-image: url(/images/about-us/about-us-bg-desktop.png);
+    background-position: auto;
   }
   .about__sub-title {
     font-size: 26px;
