@@ -111,10 +111,115 @@
   }
 }
 
+//OKNO MODALNE
+//OKNO MODALNE
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  padding: 0 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms, visibility 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    & .modal__block {
+      transform: scale(2);
+    }
+  }
+
+  &__block {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--first {
+      background-color: $secondary-color;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    background-color: $white-color;
+    border: 1px solid $primary-color;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $primary-color;
+      color: $white-color;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover .modal__close-icon,
+    &:focus .modal__close-icon {
+      fill: $white-color;
+    }
+  }
+
+  &__close-icon {
+    fill: $primary-color;
+    width: 11px;
+    height: 11px;
+  }
+
+  &__description {
+    font-weight: 500;
+    font-family: $title-font;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    color: $white-color;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  &__span {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $font-color-grey;
+    padding-bottom: 24px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about {
     background-image: url(/images/about-us/about-us-bg-desktop.png);
     background-position: auto;
+
     &__sub-title {
       font-size: 26px;
       line-height: 30px;
