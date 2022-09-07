@@ -11,7 +11,7 @@
   position: relative;
   padding-bottom: 160px;
   overflow: hidden;
-  // z-index: 1;
+  z-index: 1;
 }
 
 .header {
@@ -104,6 +104,7 @@
     padding-left: 81px;
     top: 27px;
     right: -62px;
+    z-index: -1;
   }
 
   &__ice {
@@ -160,6 +161,7 @@
 
   .relative {
     padding-bottom: 28px;
+    padding-top: 56px;
     overflow: visible;
     display: flex;
     justify-content: space-between;
@@ -242,7 +244,7 @@
       height: 322px;
       padding-top: 32px;
       padding-left: 71px;
-      top: -56px;
+      top: 0;
       right: 17.8%;
     }
 
@@ -324,6 +326,7 @@
 
   .relative {
     padding-bottom: 45px;
+    padding-top: 34px;
   }
 
   .header {
@@ -421,7 +424,7 @@
       height: 538px;
       padding-top: 56px;
       padding-left: 119px;
-      top: -34px;
+      top: 0;
       right: 267px;
     }
 

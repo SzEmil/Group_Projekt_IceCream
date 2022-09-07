@@ -207,6 +207,7 @@ body {
   position: relative;
   padding-bottom: 160px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .header__btn {
@@ -289,6 +290,7 @@ body {
   padding-left: 81px;
   top: 27px;
   right: -62px;
+  z-index: -1;
 }
 .hero__ice {
   width: 171px;
@@ -337,6 +339,7 @@ body {
   }
   .relative {
     padding-bottom: 28px;
+    padding-top: 56px;
     overflow: visible;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -422,7 +425,7 @@ body {
     height: 322px;
     padding-top: 32px;
     padding-left: 71px;
-    top: -56px;
+    top: 0;
     right: 17.8%;
   }
   .hero__ice {
@@ -490,6 +493,7 @@ body {
   }
   .relative {
     padding-bottom: 45px;
+    padding-top: 34px;
   }
   .header__tablet-menu {
     gap: 0;
@@ -571,7 +575,7 @@ body {
     height: 538px;
     padding-top: 56px;
     padding-left: 119px;
-    top: -34px;
+    top: 0;
     right: 267px;
   }
   .hero__ice {
@@ -651,11 +655,10 @@ body {
   }
 }
 .modal {
-  background-color: tomato;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 8px 8px 40px 8px;
+  overflow: scroll;
+  background-color: #ffb8ca;
+  border-radius: 24px;
+  padding: 16px 16px 40px 16px;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -663,9 +666,9 @@ body {
 }
 .modal__close-btn {
   background-color: hsl(0deg, 0%, 100%);
-  border: 1px solid hsla(0deg, 0%, 0%, 0.1);
+  border: none;
   border-radius: 50%;
-  color: black;
+  color: #d41443;
   width: 30px;
   height: 30px;
   display: block;
@@ -681,7 +684,8 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__close-btn:hover, .modal__close-btn:focus {
-  color: tomato;
+  color: #ffffff;
+  background-color: #d41443;
   outline: none;
 }
 .modal__form {
@@ -695,94 +699,142 @@ body {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: #ffffff;
   padding-top: 2px;
+}
+.modal__form-select {
+  display: block;
+  height: 40px;
+  width: calc(100vw - 55px - 55px);
+  max-width: 370px;
+  border: none;
+  border-radius: 24px;
+  padding: 0 35px;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  color: #d41443;
 }
 .modal__form-box {
   display: block;
-  margin-bottom: 10px;
+  margin-top: 12px;
   position: relative;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #ffb8ca;
 }
 .modal__form-box:focus-within {
-  fill: teal;
+  fill: #d41443;
 }
 .modal__form-box-info {
   display: block;
   font-size: 12px;
   line-height: 1.666;
   letter-spacing: 0.01em;
-  color: gray;
+  color: #ffffff;
 }
 .modal__form-input {
   display: block;
   height: 40px;
   width: calc(100vw - 55px - 55px);
   max-width: 370px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+  border: none;
+  border-radius: 24px;
   outline: none;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px 42px;
+  padding: 4px 35px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #d41443;
+}
+.modal__form-input::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: #ffb8ca;
+}
+.modal__form-input::-moz-placeholder {
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: #ffb8ca;
+}
+.modal__form-input:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: #ffb8ca;
+}
+.modal__form-input::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: #ffb8ca;
+}
+.modal__form-input::placeholder {
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: #ffb8ca;
 }
 .modal__form-input:focus-within {
   border-color: teal;
 }
 .modal__form-icon {
   position: absolute;
-  top: 27px;
+  top: 7px;
   left: 8px;
   -webkit-transform: translate(25%, 25%);
           transform: translate(25%, 25%);
 }
 .modal__form-txt-area {
+  margin-top: 12px;
   resize: none;
-  height: 120px;
+  height: 100px;
   width: calc(100vw - 55px - 55px);
   max-width: 370px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 10px 16px;
+  border: none;
+  border-radius: 24px;
+  padding: 16px 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   outline: none;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #d41443;
 }
 .modal__form-txt-area::-webkit-input-placeholder {
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #ffb8ca;
 }
 .modal__form-txt-area::-moz-placeholder {
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #ffb8ca;
 }
 .modal__form-txt-area:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #ffb8ca;
 }
 .modal__form-txt-area::-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #ffb8ca;
 }
 .modal__form-txt-area::placeholder {
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #ffb8ca;
 }
 .modal__form-txt-area:focus-within {
   border-color: tomato;
@@ -804,7 +856,7 @@ body {
   content: "";
   width: 16px;
   height: 16px;
-  border: 2px solid hsl(0deg, 0%, 13%);
+  border: 2px solid #ffffff;
   border-radius: 2px;
   margin-right: 8px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -817,6 +869,7 @@ body {
 }
 .checkbox__input:checked + .checkbox__label::before {
   border: none;
+  background-image: url(../images/checkmark.svg);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -858,7 +911,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .modal__form-input {
+  .modal__form-select, .modal__form-input {
     width: 100%;
     max-width: none;
   }
