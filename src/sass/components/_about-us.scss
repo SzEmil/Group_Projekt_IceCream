@@ -3,6 +3,7 @@
   background-image: url(/images/about-us/about-us-bg-mobile.png);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: bottom;
   width: 100%;
   width: auto;
 
@@ -113,6 +114,7 @@
 @media screen and (min-width: 768px) {
   .about {
     background-image: url(/images/about-us/about-us-bg-desktop.png);
+    background-position: auto;
     &__sub-title {
       font-size: 26px;
       line-height: 30px;

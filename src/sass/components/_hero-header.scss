@@ -1,6 +1,10 @@
 // --- MOBILE ---
 .wrapper {
   background-color: $secondary-color;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
 }
 
 .relative {
@@ -14,6 +18,10 @@
   &__btn {
     display: none;
   }
+
+  &__logo {
+    font-size: 0;
+  }
 }
 
 .main-navigation {
@@ -22,6 +30,7 @@
 
 .hero {
   background-color: $secondary-color;
+  margin-top: 56px;
 
   &__title {
     font-family: 'Titan One';
@@ -116,12 +125,10 @@
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 37px;
-    z-index: 10;
 
     &__tablet-menu {
       display: flex;
       gap: 30px;
-      z-index: 20;
     }
 
     &__btn {
@@ -154,12 +161,15 @@
 
   .relative {
     padding-bottom: 28px;
+    padding-top: 56px;
     overflow: visible;
     display: flex;
     justify-content: space-between;
   }
 
   .hero {
+    margin-top: 87px;
+
     &__title {
       padding-bottom: 20px;
       padding-top: 15px;
@@ -234,7 +244,7 @@
       height: 322px;
       padding-top: 32px;
       padding-left: 71px;
-      top: -56px;
+      top: 0;
       right: 17.8%;
     }
 
@@ -316,6 +326,7 @@
 
   .relative {
     padding-bottom: 45px;
+    padding-top: 34px;
   }
 
   .header {
@@ -413,7 +424,7 @@
       height: 538px;
       padding-top: 56px;
       padding-left: 119px;
-      top: -34px;
+      top: 0;
       right: 267px;
     }
 
