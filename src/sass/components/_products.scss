@@ -195,7 +195,7 @@
   pointer-events: none;
 }
 
-.modal {
+.modal-products {
   position: fixed;
   top: 0;
   left: 0;
@@ -212,7 +212,7 @@
     visibility: hidden;
     pointer-events: none;
 
-    & .modal__block {
+    & .modal-products__block {
       transform: scale(2);
     }
   }
@@ -262,8 +262,8 @@
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &:hover .modal__close-icon,
-    &:focus .modal__close-icon {
+    &:hover .modal-products__close-icon,
+    &:focus .modal-products__close-icon {
       fill: $white-color;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }

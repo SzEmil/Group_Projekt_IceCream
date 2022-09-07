@@ -655,6 +655,7 @@ body {
   }
 }
 .modal {
+  position: relative;
   background-color: #ffb8ca;
   border-radius: 24px;
   padding: 16px 16px 40px 16px;
@@ -663,13 +664,17 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__close-btn {
+.modal__close-btn-hero {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: block;
   background-color: hsl(0deg, 0%, 100%);
   border: none;
   border-radius: 50%;
+  padding: 10px 15px;
   color: #d41443;
   text-align: center;
-  display: block;
   cursor: pointer;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -680,7 +685,7 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__close-btn:hover, .modal__close-btn:focus {
+.modal__close-btn-hero:hover, .modal__close-btn-hero:focus {
   color: #ffffff;
   background-color: #d41443;
   outline: none;
@@ -697,7 +702,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding-top: 2px;
+  padding-top: 20px;
 }
 .modal__form-select {
   display: block;
@@ -1125,7 +1130,7 @@ body {
   pointer-events: none;
 }
 
-.modal {
+.modal-products {
   position: fixed;
   top: 0;
   left: 0;
@@ -1139,16 +1144,16 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal.is-hidden {
+.modal-products.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-.modal.is-hidden .modal__block {
+.modal-products.is-hidden .modal-products__block {
   -webkit-transform: scale(2);
           transform: scale(2);
 }
-.modal__block {
+.modal-products__block {
   position: relative;
   top: 50%;
   left: 50%;
@@ -1162,21 +1167,21 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__block--first {
+.modal-products__block--first {
   background-color: #ffb8ca;
 }
-.modal__block--second {
+.modal-products__block--second {
   background-color: #f0d1a5;
 }
-.modal__block--third {
+.modal-products__block--third {
   background-color: #c2e297;
 }
 @media screen and (min-width: 1200px) {
-  .modal__block {
+  .modal-products__block {
     width: 528px;
   }
 }
-.modal__close-btn {
+.modal-products__close-btn {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -1187,7 +1192,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-.modal__close-btn:hover, .modal__close-btn:focus {
+.modal-products__close-btn:hover, .modal-products__close-btn:focus {
   cursor: pointer;
   background-color: #d41443;
   color: white;
@@ -1196,17 +1201,17 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__close-btn:hover .modal__close-icon, .modal__close-btn:focus .modal__close-icon {
+.modal-products__close-btn:hover .modal-products__close-icon, .modal-products__close-btn:focus .modal-products__close-icon {
   fill: white;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__close-icon {
+.modal-products__close-icon {
   fill: #d41443;
   width: 11px;
   height: 11px;
 }
-.modal__description {
+.modal-products__description {
   font-weight: 500;
   font-family: "Titan One";
   font-size: 30px;
@@ -1217,7 +1222,7 @@ body {
   padding-bottom: 10px;
   padding-top: 30px;
 }
-.modal__img {
+.modal-products__img {
   margin: 0 auto;
   width: 100%;
 }
@@ -1343,7 +1348,7 @@ body {
   pointer-events: none;
 }
 
-.modal {
+.modal-about {
   position: fixed;
   top: 0;
   left: 0;
@@ -1357,16 +1362,16 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal.is-hidden {
+.modal-about.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-.modal.is-hidden .modal__block {
+.modal-about.is-hidden .modal-about__block {
   -webkit-transform: scale(2);
           transform: scale(2);
 }
-.modal__block {
+.modal-about__block {
   position: relative;
   top: 50%;
   left: 50%;
@@ -1380,15 +1385,15 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__block--first {
+.modal-about__block--first {
   background-color: #ffb8ca;
 }
 @media screen and (min-width: 1200px) {
-  .modal__block {
+  .modal-about__block {
     width: 528px;
   }
 }
-.modal__close-btn {
+.modal-about__close-btn {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -1399,7 +1404,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-.modal__close-btn:hover, .modal__close-btn:focus {
+.modal-about__close-btn:hover, .modal-about__close-btn:focus {
   cursor: pointer;
   background-color: #d41443;
   color: white;
@@ -1408,15 +1413,15 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__close-btn:hover .modal__close-icon, .modal__close-btn:focus .modal__close-icon {
+.modal-about__close-btn:hover .modal-about__close-icon, .modal-about__close-btn:focus .modal-about__close-icon {
   fill: white;
 }
-.modal__close-icon {
+.modal-about__close-icon {
   fill: #d41443;
   width: 11px;
   height: 11px;
 }
-.modal__description {
+.modal-about__description {
   font-weight: 500;
   font-family: "Titan One";
   font-size: 30px;
@@ -1427,12 +1432,12 @@ body {
   padding-bottom: 10px;
   padding-top: 30px;
 }
-.modal__span {
+.modal-about__span {
   font-family: "DM Sans";
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #907E82;
+  color: white;
   padding-bottom: 24px;
 }
 
