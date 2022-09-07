@@ -45,10 +45,8 @@
     border: none;
     border-radius: 50%;
     color: $primary-color;
-    width: 30px;
-    height: 30px;
+    text-align: center;
     display: block;
-    margin-left: auto;
     cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
