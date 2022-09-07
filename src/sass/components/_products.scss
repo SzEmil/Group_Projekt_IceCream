@@ -163,7 +163,6 @@
     border-radius: 50%;
     border-style: none;
     background-color: $white-color;
-
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus,
@@ -184,7 +183,6 @@
     align-content: center;
     stroke-width: 0;
     fill: $primary-color;
-
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -267,6 +265,7 @@
     &:hover .modal__close-icon,
     &:focus .modal__close-icon {
       fill: $white-color;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
