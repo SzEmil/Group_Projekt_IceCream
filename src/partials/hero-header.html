@@ -127,7 +127,7 @@
       <path d="M1 14.7407L15 1.25924" stroke="white" />
     </svg>
   </button>
-  <button class="menu-container__btn" type="button" data-modal-open>
+  <button class="menu-container__btn" type="button" >
     Buy now
     <svg class="menu-container__btn-icon" width="5.26" height="8">
       <use href="./images/icons.svg#buy-now-icon"></use>
@@ -142,119 +142,7 @@
   </ul>
 </div>
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="modal__close-btn" data-modal-close>x</button>
-    <h3 class="modal__form-title">Which one do you choose?</h3>
-    <form class="modal__form" name="contact-form" autocomplete="on">
-      <select class="modal__form-select">
-        <optgroup label="Ice Cream">
-          <option value="1van">vanilla ice crem</option>
-          <option value="1choc">chocolate ice crem</option>
-          <option value="1str">strawberry ice crem</option>
-          <option value="1che">cherry ice crem</option>
-          <option value="1ban">banana ice crem</option>
-          <option value="1car">caramel ice crem</option>
-          <option value="1cof">coffee ice crem</option>
-          <option value="1min">mint ice crem</option>
-        </optgroup>
-        <optgroup label="Ice Coffee">
-          <option value="2lat">traditional latte</option>
-          <option value="2lat">vanilla latte</option>
-          <option value="2choc">chocolate latte</option>
-          <option value="2coc">coco latte</option>
-        </optgroup>
-        <optgroup label="Milkshakes">
-          <option value="3van">vanilla milkshake</option>
-          <option value="3choc">chocolate milkshake</option>
-          <option value="3str">strawberry milkshake</option>
-          <option value="3che">cherry milkshake</option>
-          <option value="3ban">banana milkshake</option>
-          <option value="3car">caramel milkshake</option>
-          <option value="3cof">coffee milkshake</option>
-        </optgroup>
-      </select>
-      <h3 class="modal__form-title">Where we should delivered it?</h3>
-      <label class="modal__form-box">
-        <svg width="18" height="18" class="modal__form-icon">
-          <use href="images/icons.svg#icon-person"></use>
-        </svg>
-        <!-- <span class="modal__form-box-info">Imię i Nazwisko</span> -->
-        <input
-          class="modal__form-input"
-          type="text"
-          name="client_name"
-          placeholder="What's your name?"
-          required
-        />
-      </label>
 
-      <label class="modal__form-box">
-        <svg width="18" height="18" class="modal__form-icon">
-          <use href="images/icons.svg#icon-phone"></use>
-        </svg>
-        <!-- <span class="modal__form-box-info">Telefon</span> -->
-        <input
-          class="modal__form-input"
-          type="tel"
-          name="client_phone_number"
-          placeholder="What's your phone number?"
-        />
-      </label>
-      <label class="modal__form-box">
-        <svg width="18" height="18" class="modal__form-icon">
-          <use href="images/icons.svg#icon-email"></use>
-        </svg>
-        <!-- <span class="modal__form-box-info">Email</span> -->
-        <input
-          class="modal__form-input"
-          type="email"
-          name="client_email"
-          placeholder="What's your e-mail?"
-          required
-        />
-      </label>
-      <label class="modal__form-box">
-        <svg width="18" height="18" class="modal__form-icon">
-          <use href="images/icons.svg#icon-location"></use>
-        </svg>
-        <!-- <span class="modal__form-box-info">Email</span> -->
-        <input
-          class="modal__form-input"
-          type="text"
-          name="client_adress"
-          placeholder="What's your adress?"
-          required
-        />
-      </label>
-      <label>
-        <!-- <span class="modal__form-box-info">Komentarz</span> -->
-        <textarea
-          class="modal__form-txt-area"
-          name="client_comment"
-          placeholder="If you have special requests, text here."
-        ></textarea>
-      </label>
-
-      <div class="checkbox">
-        <input
-          type="checkbox"
-          name="statute_acceptation"
-          id="statute_checkbox"
-          required
-          class="checkbox__input"
-        />
-        <label class="checkbox__label" for="statute_checkbox">
-          <span class="checkbox__info"
-            >Oświadczam iż akceptuję <a href="#" class="checkbox__link">Regulamin</a> i
-            <a href="#" class="checkbox__link">Politykę Prywatności</a>.</span
-          >
-        </label>
-      </div>
-      <button class="checkbox__btn" type="submit">Buy it!</button>
-    </form>
-  </div>
-</div>
 
 <script
   defer
@@ -263,4 +151,4 @@
   crossorigin="anonymous"
 ></script>
 <script defer src="js/mobile-menu.js"></script>
-<script src="./js/hero-modal.js"></script>
+
