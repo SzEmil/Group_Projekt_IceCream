@@ -35,7 +35,6 @@
 }
 
 .modal {
-  overflow: scroll;
   background-color: $secondary-color;
   border-radius: 24px;
   padding: 16px 16px 40px 16px;
@@ -134,10 +133,6 @@
         letter-spacing: 0.01em;
         color: $secondary-color;
       }
-
-      &:focus-within {
-        border-color: teal;
-      }
     }
 
     &-icon {
@@ -169,10 +164,6 @@
         letter-spacing: 0.01em;
         color: $secondary-color;
       }
-
-      &:focus-within {
-        border-color: tomato;
-      }
     }
   }
 }
@@ -203,7 +194,8 @@
 
     &:checked + .checkbox__label::before {
       border: none;
-      background-image: url(../images/checkmark.svg);
+      // background-image: url(../images/checkmark.svg);
+      background-color: $primary-color;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
   }
@@ -212,17 +204,17 @@
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.03em;
-    color: gray;
+    color: $heroLightColor;
     padding: 0;
   }
 
   &:hover &__label::before,
   &:focus &__label::before {
-    border-color: tomato;
+    border-color: $primary-color;
   }
 
   &__link {
-    color: tomato;
+    color: $primary-color;
   }
 
   &__btn {
@@ -230,21 +222,21 @@
     margin-left: auto;
     margin-right: auto;
     border: none;
-    padding: 10px 76px;
-    border-radius: 4px;
-    background-color: tomato;
+    padding: 8px 65px;
+    border-radius: 24px;
+    background-color: $heroLightColor;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
     text-align: center;
     letter-spacing: 0.06em;
-    color: white;
+    color: $primary-color;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
       cursor: pointer;
-      //   box-shadow: $hoverBtnShadow;
+      background-color: $heroBtnLightHover;
       outline: none;
     }
 
