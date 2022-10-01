@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://SzEmil.github.io/Group_Projekt_GOiT",
+  "homepage": "https://SzEmil.github.io/Group_Projekt_IceCream",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Group_Projekt_GOiT/",
+    "build": "parcel build src/*.html --public-url /Group_Projekt_IceCream/",
     "scss-w": "node-sass-chokidar sass/main.scss -o css -r -w --source-map true --output-style expanded",
     "scss-prod": "node-sass-chokidar sass/main.scss -o css --ext min.css --output-style compressed | npm run prefix",
     "prefix": "postcss css/main.min.css --use=autoprefixer --autoprefixer.browsers 'last 4 versions' --annotation=false --output=css/dist/main.min.css"
